@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-image: url(bg.jpg);
+    background-size: cover;
+}
+
+/* HEADER */
+header{
+    height: 100px;
+    border-bottom: 2px solid rgb(255, 255, 255, 0.06);
+}
+
+
+.container{
+    margin: auto;
+    width: 80%;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+
+}
+
+header nav .logo a{
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    column-gap: 30px;
+}
+
+nav ul li a:hover{
+    color: #0ba2c0;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+.container .menu{
+    display: flex;
+    align-items: center;
+    column-gap: 48px;
+}
+
+
+.container .menu .menubutton{
+    color: #0ba2c0;
+    background-color: rgba(255, 255, 255, 0.08);
+    padding: 12px 24px;
+    border-radius: 56px;
+    text-decoration: none;
+}
+
+.container .menu .menubutton:hover{
+    background-color: #0ba2c0;
+    color: white;
+}
+
+/* HEADER */
+
+/* SECTION */
+
+.content{
+    color: white;
+    height: calc(100vh - 100px);
+    padding-top: 150px;
+}
+
+.content h1{
+    font-size: 24px;
+    text-align: center;
+
+}
+
+.content h1 p{
+    font-size: 24px;
+    text-align: center;
+    margin-top: 32px;
+
+}
+
+.content .links{
+    display: flex;
+    justify-content: center;
+    margin-top: 48px;
+    column-gap: 16px;
+}
+
+.content .links a{
+    color: white;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.08);
+    border-radius: 56px;
+    padding: 12px 24px;
+}
+
+.content .links a:hover{
+    color: white;
+    text-decoration: none;
+    background-color:#0ba2c0
+
+}
+ 
+
+
+
+
+/* responsive */
+
+@media (max-width:576px){
+    .container{
+        width: 100%;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .menu ul{
+        column-gap: 20px;
+    }
+
+    .menu .menubutton{
+        display: none;
+    }
+
+    .content{
+        padding-top: 50px;
+    }
+
+    .content h1{
+        font-size: 36px;
+    }
+
+    .content p {
+        font-size: 16px;
+    }
+
+    .content .links{
+        flex-direction: column;
+        align-items: center;
+        row-gap: 1rem;
+    }
+    
+    .content .links a{
+        width: 90%;
+    }
+}
+
+
+
+
+/* responsive */
